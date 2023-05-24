@@ -18,10 +18,10 @@ const server = http.createServer((request, response) => {
       email: 'matheusflorencio@email.com',
     });
 
-    return response.end('Criação de usuário');
+    return response.writeHead(201).end();
   }
 
-  return response.end('florencioMath - Node.js Fundamentos');
+  return response.writeHead(404).end();
 });
 
 server.listen(3333);
