@@ -1,7 +1,17 @@
 import http from 'node:http';
 
 const server = http.createServer((request, response) => {
-  response.end('florencioMath - Node.js Fundamentos');
+  const { method, url } = request;
+
+  if (method === 'GET' && url === '/users') {
+    return response.end('Listagem de usuários');
+  }
+
+  if (method === 'POST' && url === '/users') {
+    return response.end('Criação de usuário');
+  }
+
+  return response.end('florencioMath - Node.js Fundamentos');
 });
 
 server.listen(3333);
