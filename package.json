@@ -1,0 +1,13 @@
+{
+  "name": "course-ignite-nodejs-fundamentos",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Curso da ROcketseat sobre Node.js, iremos desenvolver uma API RESTful com Node.js focada nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/serve.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
